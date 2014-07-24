@@ -18,4 +18,4 @@ def POStagger(sentence):
 
 if __name__ == "__main__":
     for word in POStagger("你好，你是？"):
-        print word
+        print word.word, word.flag
