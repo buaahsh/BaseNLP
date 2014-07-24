@@ -1,12 +1,12 @@
 # -*- coding:utf-8 -*-
 
 
-import wordbreaker
+from src import Base
 
 
 if __name__ == "__main__":
     tokens = []
-    sentences = "你好，你是谁"
+    sentences = "王明，你好，你是谁"
 
-    for item in wordbreaker.wordbreaker(sentences):
-        print item
+    for item in Base.ConvertText(sentences, True).Terms:
+        print item.getValue(), item.getPOS()

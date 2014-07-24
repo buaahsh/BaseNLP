@@ -2,10 +2,11 @@ from __future__ import with_statement
 import re
 import os
 import viterbi
-import jieba
+import src.wordbreaker.jieba as jieba
 import sys
 import marshal
 from functools import wraps
+
 
 default_encoding = sys.getfilesystemencoding()
 
