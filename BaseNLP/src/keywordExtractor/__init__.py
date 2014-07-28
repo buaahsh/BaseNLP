@@ -1,12 +1,9 @@
 # -*- coding:utf-8 -*-
 
 
-import sentencebreaker as sb
+import ExtractKeyword as ek
 
 
-def sentencebreaker(sentences):
-    sentenceList = sb.split(sentences)
-    return sentenceList
-
-if __name__ == "__main__":
-    print sentencebreaker("你好，你是？")
+def ExtractKeyword(text, topK=20):
+    keywords = ek.ExtractKeyword(text, topK)
+    return keywords
