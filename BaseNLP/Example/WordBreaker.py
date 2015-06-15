@@ -2,7 +2,7 @@
 
 
 from src import Base
-import src.keywordExtractor as ke
+import src.keywordextractor as ke
 
 if __name__ == "__main__":
     tokens = []
